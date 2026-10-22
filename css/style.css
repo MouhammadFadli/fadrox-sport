@@ -3379,3 +3379,223 @@ footer .row .links a {
     transition: none !important;
   }
 }
+
+@media (max-width: 593px) {
+  /* Header: compact layout without covering content */
+  header {
+    position: relative !important;
+    top: auto !important;
+    left: auto;
+    right: auto;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  body {
+    padding-top: 0 !important;
+  }
+
+  /* Reduce top information bar */
+  header .top_bar {
+    height: auto;
+    min-height: 30px;
+  }
+
+  header .top_bar .container .top_bar_list {
+    min-height: 30px;
+    flex-wrap: wrap;
+  }
+
+  /* Logo, icons and header spacing */
+  header .top_header .container {
+    padding: 6px 0 !important;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  header .top_header .logo img,
+  header .top_header .container .logo img {
+    width: auto;
+    height: 46px;
+    max-width: 90px;
+    object-fit: contain;
+  }
+
+  header .top_header .header-icons {
+    gap: 16px;
+    align-items: center;
+  }
+
+  header .top_header .header-icons .icon i {
+    font-size: 21px;
+  }
+
+  /* Search bar */
+  header .top_header .search_box {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4px;
+    min-width: 0;
+  }
+
+  header .top_header .search_box input,
+  header .top_header .search_box select,
+  header .top_header .search_box button {
+    height: 40px;
+    min-width: 0;
+  }
+
+  header .top_header .search_box select {
+    width: 105px;
+    max-width: 35%;
+    margin-right: 4px;
+    padding-left: 4px;
+    font-size: 12px;
+  }
+
+  header .top_header .search_box input {
+    flex: 1;
+    width: 0;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  header .top_header .search_box button {
+    flex: 0 0 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+
+  /* Bottom navigation and login buttons */
+  header .bottom_header {
+    padding: 4px 0;
+  }
+
+  header .bottom_header .container {
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header .bottom_header nav {
+    height: auto;
+    min-height: 38px;
+    gap: 8px;
+  }
+
+  .login_signup {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .login_signup .btn {
+    height: 34px;
+    padding: 6px 9px;
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  /* Product cards */
+  .product {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .product *,
+  .product *::before,
+  .product *::after {
+    box-sizing: border-box;
+  }
+
+  /* Keep cart and favorite buttons in one row */
+  .product .icons {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
+    width: auto;
+    max-width: calc(100% - 16px);
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    margin-top: 0;
+    min-width: 0;
+  }
+
+  .product .icons .btn_add_cart {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    height: 40px;
+    min-height: 40px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 12px;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 7px;
+    transform: none;
+    flex-wrap: nowrap;
+  }
+
+  .product .icons .btn_add_cart i {
+    flex: 0 0 auto;
+    font-size: 13px;
+  }
+
+  .product .icons .btn_favorite,
+  .product .icons .favorite-toggle {
+    flex: 0 0 40px;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+  }
+
+  .product .icons .btn_favorite i,
+  .product .icons .favorite-toggle i {
+    font-size: 18px;
+  }
+
+  .product .icons button:hover,
+  .product .icons a:hover {
+    transform: none;
+  }
+}
+
+/* Narrow phones */
+@media (max-width: 380px) {
+  header .top_header .header-icons {
+    gap: 10px;
+  }
+
+  header .top_header .search_box select {
+    width: 88px;
+    font-size: 11px;
+  }
+
+  .product .icons {
+    left: 5px;
+    right: 5px;
+    max-width: calc(100% - 10px);
+    gap: 4px;
+  }
+
+  .product .icons .btn_add_cart {
+    padding: 0 3px;
+    font-size: 11px;
+    gap: 3px;
+  }
+}
