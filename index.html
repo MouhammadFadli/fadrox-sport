@@ -1,0 +1,470 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fadrox Sport | Sports Nutrition &amp; Supplements</title>
+    <!-- Logo -->
+    <link href="./img/newlogo.png" rel="icon" />
+    <!-- Font Awsome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <div class="container topbar-inner">
+          <div aria-live="polite" class="sports-tip" role="status">
+            <i aria-hidden="true" class="fa-solid fa-lightbulb"></i
+            ><span class="sports-tip-label">Sports tip:</span
+            ><span class="sports-tip-text"
+              >Stay hydrated before, during, and after training.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="top_header">
+        <div class="container">
+          <a class="logo" href="index.html"
+            ><img alt="Fadli Sport logo" src="./img/icon.png"
+          /></a>
+          <form action="" class="search_box">
+            <div class="select-box">
+              <select id="catagory" name="catagory">
+                <option value="all">All Categories</option>
+                <option value="protein">Protein</option>
+                <option value="creatine">Creatine</option>
+                <option value="vitamins">Vitamins</option>
+                <option value="martial-arts">Martial Arts</option>
+              </select>
+            </div>
+            <input
+              autocomplete="off"
+              id="search"
+              name="search"
+              placeholder="Search products..."
+              type="text"
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="header-icons">
+            <div class="icon">
+              <a
+                aria-label="View favorite products"
+                href="pages/favorites.html"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <span class="count count-favourit">0</span>
+              </a>
+            </div>
+            <div class="icon cart-icon">
+              <a
+                aria-expanded="false"
+                aria-label="Open shopping cart"
+                class="cart-trigger"
+                href="#"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="count count-shop">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <button
+              aria-controls="mobile-navigation"
+              aria-expanded="false"
+              aria-label="Open navigation menu"
+              class="open_menu"
+              type="button"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="category_nav">
+              <button
+                aria-controls="category_nav_list"
+                aria-expanded="false"
+                class="category_btn"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-bars"></i>
+                <p>Shop by Product</p>
+                <i aria-hidden="true" class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="category_nav_list" id="category_nav_list">
+                <button
+                  aria-expanded="false"
+                  class="category-menu-item has-submenu"
+                  data-menu="protein_list"
+                  type="button"
+                >
+                  Protein
+                  <i aria-hidden="true" class="fa-solid fa-angle-right"></i>
+                </button>
+                <div class="protein_list submenu" id="protein_list">
+                  <button data-filter="iso" type="button">ISO Protein</button>
+                  <button data-filter="whey" type="button">Whey Protein</button>
+                  <button data-filter="mass-gainer" type="button">
+                    Mass Gainer
+                  </button>
+                </div>
+                <button data-filter="creatine" type="button">Creatine</button>
+                <button data-filter="amino" type="button">Amino Acids</button>
+                <button data-filter="vitamins" type="button">Vitamins</button>
+                <button data-filter="sports-tools" type="button">
+                  Sports Tools
+                </button>
+                <button data-filter="martial-arts" type="button">
+                  Martial Arts
+                </button>
+                <a href="pages/products.html">Browse Full Catalogue</a
+                ><button data-filter="all" type="button">
+                  View Homepage Sections
+                </button>
+              </div>
+            </div>
+            <ul class="nav_links" id="mobile-navigation">
+              <button
+                aria-label="Close navigation menu"
+                class="close_menu"
+                title="Close menu"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+              </button>
+              <li>
+                <a aria-current="page" class="active" href="index.html">Home</a>
+              </li>
+              <li><a href="pages/products.html">Products</a></li>
+              <li><a href="pages/offers.html">Offers</a></li>
+              <li><a href="pages/advice.html">Advice</a></li>
+              <li>
+                <a href="pages/protein-calculator.html">Protein Calculator</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="login_signup btns">
+            <a class="btn" href="pages/login.html"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a class="btn sign_up" href="pages/login.html?mode=signup"
+              >Sign Up<i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="slider">
+      <div class="container">
+        <!-- Swiper JS  -->
+        <div class="slid_swp mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img alt="" src="./img/offer1.png" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img alt="" src="./img/offer2.png" /></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="banner_2">
+          <a href="#"><img alt="" src="./img/banner2.png" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="offers_bottom">
+      <div class="container">
+        <div class="box">
+          <a class="link_btn" href=""></a>
+          <img
+            alt=""
+            src="./img/Optimum-Gold-Standard-whey-COKKIESANDCREAM-4.65Lbs-O22.jpg"
+          />
+          <div class="text">
+            <h5>Whey Protein ON</h5>
+            <h5>deals on this</h5>
+            <div class="sale">
+              <p>Up <br />To</p>
+              <span>70%</span>
+            </div>
+            <h6>Shop Now</h6>
+          </div>
+        </div>
+        <div class="box">
+          <a class="link_btn" href=""></a>
+          <img alt="" src="./img/nitrotech-n.jpg" />
+          <div class="text">
+            <h5>Nitro Tech Muscle Tech</h5>
+            <h5>deals on this</h5>
+            <div class="sale">
+              <p>Up <br />To</p>
+              <span>70%</span>
+            </div>
+            <h6>Shop Now</h6>
+          </div>
+        </div>
+        <div class="box">
+          <a class="link_btn" href=""></a>
+          <img alt="" src="./img/iso.jpg" />
+          <div class="text">
+            <h5>Iso Protein Dymatize</h5>
+            <h5>deals on this</h5>
+            <div class="sale">
+              <p>Up <br />To</p>
+              <span>70%</span>
+            </div>
+            <h6>Shop Now</h6>
+          </div>
+        </div>
+        <div class="box">
+          <a class="link_btn" href=""></a>
+          <img alt="" src="./img/creatinemuscletech4.5kg.jpg" />
+          <div class="text">
+            <h5>Creatin CellTech MuscleTech</h5>
+            <h5>deals on this</h5>
+            <div class="sale">
+              <p>Up <br />To</p>
+              <span>70%</span>
+            </div>
+            <h6>Shop Now</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HOT DEALS -->
+    <div class="slider_products slide">
+      <div class="container">
+        <div class="slide_product mySwiper">
+          <div class="top_slide">
+            <h2><i class="fa-solid fa-tags"> </i>Hot Deals</h2>
+            <div class="btn_slide"></div>
+            <div class="btn_next_prev">
+              <span class="btn_prev nav_btn">
+                <i class="fa-solid fa-angle-left prev"></i>
+              </span>
+              <span class="btn_next nav_btn">
+                <i class="fa-solid fa-angle-right next"></i>
+              </span>
+            </div>
+          </div>
+          <div class="products swiper-wrapper" id="swiper_items_sale"></div>
+        </div>
+      </div>
+    </div>
+    <!-- banners 2 img -->
+    <div class="banners">
+      <div class="container">
+        <div class="banners_boxs banner_2_img">
+          <a class="box" href="#"><img alt="" src="./img/backegon.png" /></a>
+          <a class="box" href="#"><img alt="" src="./img/backegvenom.png" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- protein -->
+    <div class="slider_products slide">
+      <div class="container">
+        <div class="slide_product swiper mySwiper">
+          <div class="top_slide">
+            <h2><i class="fa-solid fa-tags"> </i>PROTEINS</h2>
+            <div class="btn_slide"></div>
+            <div class="btn_next_prev">
+              <span class="btn_prev nav_btn">
+                <i class="fa-solid fa-angle-left prev"></i>
+              </span>
+              <span class="btn_next nav_btn">
+                <i class="fa-solid fa-angle-right next"></i>
+              </span>
+            </div>
+          </div>
+          <div class="products swiper-wrapper" id="swiper_proteins"></div>
+          <!-- <div class="swiper-button-next btn_Swip"></div>
+          <div class="swiper-button-prev btn_Swip"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- creatine -->
+    <div class="slider_products slide">
+      <div class="container">
+        <div class="slide_product swiper mySwiper">
+          <div class="top_slide">
+            <h2><i class="fa-solid fa-tags"> </i>CREATINE</h2>
+            <div class="btn_slide"></div>
+            <div class="btn_next_prev">
+              <span class="btn_prev nav_btn">
+                <i class="fa-solid fa-angle-left prev"></i>
+              </span>
+              <span class="btn_next nav_btn">
+                <i class="fa-solid fa-angle-right next"></i>
+              </span>
+            </div>
+          </div>
+          <div class="products swiper-wrapper" id="swiper_creatine"></div>
+        </div>
+      </div>
+    </div>
+    <!-- banners 3 img  -->
+    <div class="banners">
+      <div class="container">
+        <div class="banners_boxs banners_3_img">
+          <a href="#"><img alt="" src="./img/banner-box1.png" /></a>
+          <a href="#"><img alt="" src="./img/banner-box2.png" /></a>
+          <a href="#"><img alt="" src="./img/banner-box3.png" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- supplements -->
+    <div class="slider_products slide">
+      <div class="container">
+        <div class="slide_product swiper mySwiper">
+          <div class="top_slide">
+            <h2><i class="fa-solid fa-tags"> </i>SUPPLEMENTS</h2>
+            <div class="btn_slide"></div>
+            <div class="btn_next_prev">
+              <span class="btn_prev nav_btn">
+                <i class="fa-solid fa-angle-left prev"></i>
+              </span>
+              <span class="btn_next nav_btn">
+                <i class="fa-solid fa-angle-right next"></i>
+              </span>
+            </div>
+          </div>
+          <div class="products swiper-wrapper" id="swiper_supplements"></div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="big_row">
+          <img alt="Fadli Sport" class="logo_footer" src="./img/footer.png" />
+          <p>
+            Sports nutrition and training essentials to support your next step.
+            Shop confidently, train consistently.
+          </p>
+          <div class="icons_footer">
+            <a
+              aria-label="Contact Fadli Sport on WhatsApp"
+              href="https://wa.me/963959122991"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i></a
+            ><a
+              aria-label="Fadli Sport on Facebook"
+              href="https://www.facebook.com/share/1Drqq5js1W/"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i></a
+            ><a
+              aria-label="Fadli Sport on Instagram"
+              href="https://www.instagram.com/fadli.tkd?obrf=MzE5M210N204a2Fk"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Find It Fast</h4>
+          <div class="links">
+            <a href="./pages/products.html?category=protein"
+              >Protein &amp; Whey</a
+            ><a href="./pages/products.html?category=creatine">Creatine</a
+            ><a href="./pages/products.html?category=amino">Amino Acids</a
+            ><a href="./pages/products.html?category=vetamin">Vitamins</a
+            ><a href="./pages/products.html?category=martial-arts"
+              >Sports &amp; Martial Arts</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <h4>Quick Links</h4>
+          <div class="links">
+            <a href="./index.html">Home</a
+            ><a href="./pages/products.html">All Products</a
+            ><a href="./pages/offers.html">Current Offers</a
+            ><a href="./pages/advice.html">Sports Advice</a
+            ><a href="./pages/protein-calculator.html">Protein Calculator</a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Customer Service</h4>
+          <div class="links">
+            <a href="./pages/checkout.html">Checkout &amp; Orders</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Shipping &amp; Delivery Questions</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Returns &amp; Product Support</a
+            ><a href="./pages/login.html">Account Access</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Contact Us: +963 959 122 991</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_footer">
+        <div class="container">
+          <p>© <span>FADLI SPORT.</span> All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <div class="cart">
+      <div class="top_cart">
+        <h3>Cart Items : <span class="count_itme_cart">0</span></h3>
+        <button
+          aria-label="Close shopping cart"
+          class="close_cart"
+          type="button"
+        >
+          <i aria-hidden="true" class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="items_in_cart" id="cart_items"></div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>subtotal</p>
+          <p class="price_cart_total">%0</p>
+        </div>
+        <div class="button_cart">
+          <a class="btn_cart btn" href="pages/checkout.html">Checkout</a>
+          <button class="btn_cart trans_bg btn cart-close" type="button">
+            Shop
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="swimerfinish">
+      <div class="swiper">
+        <i class=""></i>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Items_home JS -->
+    <script src="./js/items_home.js"></script>
+    <!-- File JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <button
+      aria-label="Close navigation menu"
+      class="mobile-nav-backdrop"
+      tabindex="-1"
+      type="button"
+    ></button>
+  </body>
+</html>

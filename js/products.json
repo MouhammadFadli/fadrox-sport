@@ -1,0 +1,372 @@
+[
+  {
+    "id": 0,
+    "img": "/img/product/beefproteinapplied.webp",
+    "name": "BEEF-XP APPLIED NUTRITION 2KG",
+    "price": 70,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 1,
+    "img": "/img/product/wheyon.webp",
+    "name": "WHEY GOLD STANDARD 100% ON 2.27KG",
+    "price": 90,
+    "old_price": 110,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 2,
+    "img": "/img/product/aminoapplied.webp",
+    "name": "AMINO FUEL ULTIMATE EAAs APPLIED NUTRITION",
+    "price": 30,
+    "category": "amino",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 3,
+    "img": "/img/product/creatinemtbig.webp",
+    "name": "CELL TECH CREATINE MUSCLETECH 2.63KG",
+    "price": 50,
+    "old_price": 60,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 4,
+    "img": "/img/product/isodhmatize.webp",
+    "name": "ISO 100 DYMATIZE 2.3KG",
+    "price": 110,
+    "old_price": 130,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 5,
+    "img": "/img/product/hydroon.webp",
+    "name": "HYDRO WHEY OPTIMUM NUTRITION 1.8KG",
+    "price": 120,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 6,
+    "img": "/img/product/aminoon.webp",
+    "name": "SUPERIOR AMINO 2222 320 TABLETS",
+    "price": 35,
+    "old_price": 60,
+    "category": "amino",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 7,
+    "img": "/img/product/massgoldleanmass.webp",
+    "name": "GOLD LEAN MASS 2.3KG",
+    "price": 60,
+    "category": "protein",
+    "type": "mass",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 8,
+    "img": "/img/product/maltivatminmt.webp",
+    "name": "CREATINE MONOHYDRATE 100% MUSCLETECH 250G",
+    "price": 20,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 9,
+    "img": "/img/product/massdymatizechocolate.webp",
+    "name": "SUPER MASS GAINER DYMATIZE CHOCOLATE 2.7KG",
+    "price": 110,
+    "category": "protein",
+    "type": "mass",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 10,
+    "img": "/img/product/now.webp",
+    "name": "ASHWAGANDHA Stress Relief 60 bag capsules",
+    "price": 25,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 11,
+    "img": "/img/product/nitrotechmt.webp",
+    "name": "NITRO TECH MUSCLE TECH 2.4KG",
+    "price": 50,
+    "old_price": 70,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 12,
+    "img": "/img/product/amino-hardcores.webp",
+    "name": "AMINO HARDCORE MEGA SPORT 320 TABLETS",
+    "price": 28,
+    "category": "amino",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 13,
+    "img": "/img/product/isodhmatize.webp",
+    "name": "ISOLATE GOLD STANDARD 100% ON 930G",
+    "price": 100,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 14,
+    "img": "/img/product/creatinemtfromhib.webp",
+    "name": "CREATINE MONOHYDRATE MUSCLETECH 400G",
+    "price": 25,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 15,
+    "img": "/img/product/massanabliccircle.webp",
+    "name": "ANABOLIC MASS FROM KEVEN LEVRON 3KG",
+    "price": 70,
+    "category": "protein",
+    "type": "mass",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 16,
+    "img": "/img/product/multivatimnon.webp",
+    "name": "OPTI-MEN FROM OPTIMUM NUTRITION 90 TABLETS",
+    "price": 25,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 17,
+    "img": "/img/product/wheymt.webp",
+    "name": "WHEY PROTEIN GRASS-FED MUSCLETECH 816G ",
+    "price": 60,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 18,
+    "img": "/img/product/wheybpi.webp",
+    "name": "WHEY HD FROM bpi 1850G",
+    "price": 55,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 19,
+    "img": "/img/product/protinehotchocolate.webp",
+    "name": "PROTEIN HOT CHOCOLATE ON 350G",
+    "price": 22,
+    "category": "protein",
+    "type": "mass",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 20,
+    "img": "/img/product/creatinerc.webp",
+    "name": "CREATINE RC ONFLAVORED POWDER 300G",
+    "price": 15,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 21,
+    "img": "/img/product/wheygold.webp",
+    "name": "WHEY GOLD FROM KEVIN LEVRON 2KG",
+    "price": 58,
+    "category": "protein",
+    "type": "whey",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 22,
+    "img": "/img/product/creatinwarda.webp",
+    "name": "CREATINE MICRONIZED ON UNFLAVORID 300G",
+    "price": 29,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 23,
+    "img": "/img/product/casineon.webp",
+    "name": "CASEIN GOLD STANDARD ON CHOCOLATE 1.82KG",
+    "price": 90,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 24,
+    "img": "/img/product/creatinegold.webp",
+    "name": "CREATINE GOLD KEVIN LEVRON 300G",
+    "price": 20,
+    "category": "creatine",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 25,
+    "img": "/img/product/isogold.webp",
+    "name": "GOLD ISO FROM KEVIN LEVRON 2KG",
+    "price": 40,
+    "old_price": 55,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 37,
+    "img": "/img/product/hydrobpi.webp",
+    "name": "HYDRO WHEY PROTEIN HD FROM bpi SPORTS 1.82KG",
+    "price": 60,
+    "old_price": 90,
+    "category": "protein",
+    "type": "iso",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 26,
+    "img": "/img/product/collagenon.webp",
+    "name": "COLLAGEN PEPTIDES FROM ON UNFLAVOURID 320G",
+    "price": 40,
+    "old_price": 80,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 27,
+    "img": "/img/product/massonbanana.webp",
+    "name": "SERIOUS MASS FROM ON BANANA",
+    "price": 70,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 28,
+    "img": "/img/product/massdymatizeicecream.webp",
+    "name": "SUPER MASS GAINER DYMATIZE ICE CREAM 2.7KG",
+    "price": 110,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 29,
+    "img": "/img/product/massanabolic.webp",
+    "name": "ANABOLIC MASS FROM KEVEN LEVRON 7KG",
+    "price": 60,
+    "old_price": 80,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 30,
+    "img": "/img/product/massdymatize.webp",
+    "name": "SUPER MASS GAINER DYMATIZE CHOCOLATE 5.4KG",
+    "price": 100,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 31,
+    "img": "/img/product/casinedymatize.webp",
+    "name": "ELITE CASEIN FROM Dymatize SMOOTH VAILA 1.8KG",
+    "price": 110,
+    "old_price": 130,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 32,
+    "img": "/img/product/aminomt.webp",
+    "name": "AMINO BUILD FROM MUSCLETECH 593KG STRAWBERRY WATERMELON",
+    "price": 50,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 33,
+    "img": "/img/product/lopoNutrex.webp",
+    "name": "LIPO6 LACK ULTRA FROM NUTREX 60 TABLETS",
+    "price": 20,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 34,
+    "img": "/img/product/isodhmatize.webp",
+    "name": "ISO 100 DYMATIZE HYDROYLYZED 2.3KG",
+    "price": 110,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 35,
+    "img": "/img/product/eaaMuscletech.webp",
+    "name": "EAA+ MUSCLETECH PLATINUM 387KG",
+    "price": 40,
+    "old_price": 60,
+    "category": "vetamin",
+    "stock": 100,
+    "stock_status": "in_stock"
+  },
+  {
+    "id": 36,
+    "img": "/img/product/proteinBeefApplied.webp",
+    "name": "PRTOEIN BEEF-XP APPLIED NUTRITION 1.8KG",
+    "price": 100,
+    "old_price": 80,
+    "category": "protein",
+    "stock": 100,
+    "stock_status": "in_stock"
+  }
+]

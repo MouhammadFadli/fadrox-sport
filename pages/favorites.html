@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Favorite Products | Fadli Sport</title>
+    <link href="../img/newlogo.png" rel="icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <div class="container topbar-inner">
+          <div aria-live="polite" class="sports-tip" role="status">
+            <i aria-hidden="true" class="fa-solid fa-lightbulb"></i
+            ><span class="sports-tip-label">Sports tip:</span
+            ><span class="sports-tip-text"
+              >Stay hydrated before, during, and after training.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="top_header">
+        <div class="container">
+          <a class="logo" href="index.html"
+            ><img alt="Fadli Sport logo" src="../img/icon.png"
+          /></a>
+          <form action="" class="search_box">
+            <div class="select-box">
+              <select id="catagory" name="catagory">
+                <option value="all">All Categories</option>
+                <option value="protein">Protein</option>
+                <option value="creatine">Creatine</option>
+                <option value="vitamins">Vitamins</option>
+                <option value="martial-arts">Martial Arts</option>
+              </select>
+            </div>
+            <input
+              autocomplete="off"
+              id="search"
+              name="search"
+              placeholder="Search products..."
+              type="text"
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="header-icons">
+            <div class="icon active">
+              <a aria-label="View favorite products" href="favorites.html">
+                <i class="fa-regular fa-heart"></i>
+                <span class="count count-favourit">0</span>
+              </a>
+            </div>
+            <a
+              aria-expanded="false"
+              aria-label="Open shopping cart"
+              class="icon cart-trigger"
+              href="#"
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <span class="count count-shop">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <button
+              aria-controls="mobile-navigation"
+              aria-expanded="false"
+              aria-label="Open navigation menu"
+              class="open_menu"
+              type="button"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="category_nav">
+              <button
+                aria-controls="category_nav_list"
+                aria-expanded="false"
+                class="category_btn"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-bars"></i>
+                <p>Shop by Product</p>
+                <i aria-hidden="true" class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="category_nav_list" id="category_nav_list">
+                <button
+                  aria-expanded="false"
+                  class="category-menu-item has-submenu"
+                  data-menu="protein_list"
+                  type="button"
+                >
+                  Protein
+                  <i aria-hidden="true" class="fa-solid fa-angle-right"></i>
+                </button>
+                <div class="protein_list submenu" id="protein_list">
+                  <button data-filter="iso" type="button">ISO Protein</button>
+                  <button data-filter="whey" type="button">Whey Protein</button>
+                  <button data-filter="mass-gainer" type="button">
+                    Mass Gainer
+                  </button>
+                </div>
+                <button data-filter="creatine" type="button">Creatine</button>
+                <button data-filter="amino" type="button">Amino Acids</button>
+                <button data-filter="vitamins" type="button">Vitamins</button>
+                <button data-filter="sports-tools" type="button">
+                  Sports Tools
+                </button>
+                <button data-filter="martial-arts" type="button">
+                  Martial Arts
+                </button>
+                <button data-filter="all" type="button">
+                  View All Products
+                </button>
+              </div>
+            </div>
+            <ul class="nav_links" id="mobile-navigation">
+              <button
+                aria-label="Close navigation menu"
+                class="close_menu"
+                title="Close menu"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+              </button>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="offers.html">Offers</a></li>
+              <li><a href="advice.html">Advice</a></li>
+              <li><a href="protein-calculator.html">Protein Calculator</a></li>
+            </ul>
+          </nav>
+          <div class="login_signup btns">
+            <a class="btn" href="login.html"
+              >Login <i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+            <a class="btn sign_up" href="#"
+              >Sign Up<i class="fa-solid fa-user-plus"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="favorites-page">
+      <div class="container">
+        <div class="favorites-heading">
+          <i aria-hidden="true" class="fa-solid fa-heart"></i>
+          <h1>Your Favorite Products</h1>
+        </div>
+        <p class="favorites-intro">Your saved products, all in one place.</p>
+        <div aria-live="polite" class="favorites-grid" id="favorites_grid">
+          <p>Loading your favorites…</p>
+        </div>
+      </div>
+    </main>
+    <div class="cart">
+      <div class="top_cart">
+        <h3>Cart Items : <span class="count_itme_cart">0</span></h3>
+        <span class="close_cart" onclick="Open_List(cart)"
+          ><i class="fa-regular fa-circle-xmark"></i
+        ></span>
+      </div>
+      <div class="items_in_cart" id="cart_items"></div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>subtotal</p>
+          <p class="price_cart_total">%0</p>
+        </div>
+        <div class="button_cart">
+          <a class="btn_cart btn" href="checkout.html">Checkout</a>
+          <span class="btn_cart trans_bg btn" onclick="Open_List(cart)"
+            >Shop</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="../js/items_home.js"></script>
+    <script src="../js/main.js"></script>
+    <button
+      aria-label="Close navigation menu"
+      class="mobile-nav-backdrop"
+      tabindex="-1"
+      type="button"
+    ></button>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sports Advice | Fadli Sport</title>
+    <link href="../img/newlogo.png" rel="icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <div class="container topbar-inner">
+          <div class="sports-tip">
+            <i aria-hidden="true" class="fa-solid fa-lightbulb"></i
+            ><span class="sports-tip-label">Sports tip:</span
+            ><span class="sports-tip-text"
+              >Recover well and train consistently.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="top_header">
+        <div class="container">
+          <a class="logo" href="../index.html"
+            ><img alt="Fadli Sport logo" src="../img/icon.png"
+          /></a>
+          <div class="header-icons">
+            <a aria-label="Favorites" class="icon" href="favorites.html"
+              ><i class="fa-regular fa-heart"></i
+              ><span class="count count-favourit">0</span></a
+            ><a
+              aria-expanded="false"
+              aria-label="Open shopping cart"
+              class="icon cart-trigger"
+              href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span class="count count-shop">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <button
+              aria-controls="mobile-navigation"
+              aria-expanded="false"
+              aria-label="Open navigation menu"
+              class="open_menu"
+              type="button"
+            >
+              <i aria-hidden="true" class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav_links" id="mobile-navigation">
+              <button
+                aria-label="Close navigation menu"
+                class="close_menu"
+                title="Close menu"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+              </button>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="offers.html">Offers</a></li>
+              <li>
+                <a aria-current="page" class="active" href="advice.html"
+                  >Advice</a
+                >
+              </li>
+              <li><a href="protein-calculator.html">Protein Calculator</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="content-page">
+      <div class="container">
+        <section class="page-heading">
+          <h1>
+            <i
+              class="fa-solid fa-book-open"
+              style="color: var(--main-color-ora)"
+            ></i>
+            Sports &amp; Supplement Advice
+          </h1>
+          <p>
+            Practical, general education to help you make informed choices.
+            Advice here is not a substitute for medical care or individualized
+            nutrition guidance.
+          </p>
+        </section>
+        <section class="content-grid">
+          <article class="content-card">
+            <i class="fa-solid fa-dumbbell card-icon"></i>
+            <h2>Protein</h2>
+            <p>
+              Prioritize adequate daily protein from a varied diet. Spread
+              protein-containing meals across the day and choose supplements
+              only when they make your routine easier.
+            </p>
+          </article>
+          <article class="content-card">
+            <i class="fa-solid fa-flask card-icon"></i>
+            <h2>Creatine</h2>
+            <p>
+              Creatine monohydrate is the best-studied form for many
+              high-intensity training goals. Check product quality and consult a
+              qualified clinician if you have a medical condition or take
+              medication.
+            </p>
+          </article>
+          <article class="content-card">
+            <i class="fa-solid fa-pills card-icon"></i>
+            <h2>Vitamins &amp; supplements</h2>
+            <p>
+              Supplements should fill a specific need, not replace a balanced
+              diet. Avoid megadoses and check ingredient labels, allergens, and
+              third-party sport testing where relevant.
+            </p>
+          </article>
+          <article class="content-card">
+            <i class="fa-solid fa-bed card-icon"></i>
+            <h2>Recovery</h2>
+            <p>
+              Consistent sleep, enough total energy, hydration, and gradual
+              training progression are foundational. Persistent pain, dizziness,
+              or unusual symptoms warrant professional assessment.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <aside aria-label="Shopping cart" class="cart">
+      <div class="top_cart">
+        <h3>Cart Items: <span class="count_itme_cart">0</span></h3>
+        <button aria-label="Close cart" class="close_cart" type="button">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="items_in_cart" id="cart_items"></div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>Subtotal</p>
+          <p class="price_cart_total">$ 0</p>
+        </div>
+        <div class="button_cart">
+          <a class="btn_cart btn btn_checkout" href="checkout.html">Checkout</a
+          ><button class="btn_cart trans_bg btn cart-close" type="button">
+            Continue shopping
+          </button>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="container">
+        <div class="big_row">
+          <img alt="Fadli Sport" class="logo_footer" src="../img/footer.png" />
+          <p>
+            Sports nutrition and training essentials to support your next step.
+            Shop confidently, train consistently.
+          </p>
+          <div class="icons_footer">
+            <a
+              aria-label="Contact Fadli Sport on WhatsApp"
+              href="https://wa.me/963959122991"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i></a
+            ><a
+              aria-label="Fadli Sport on Facebook"
+              href="https://www.facebook.com/share/1Drqq5js1W/"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i></a
+            ><a
+              aria-label="Fadli Sport on Instagram"
+              href="https://www.instagram.com/fadli.tkd?obrf=MzE5M210N204a2Fk"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Find It Fast</h4>
+          <div class="links">
+            <a href="../pages/products.html?category=protein"
+              >Protein &amp; Whey</a
+            ><a href="../pages/products.html?category=creatine">Creatine</a
+            ><a href="../pages/products.html?category=amino">Amino Acids</a
+            ><a href="../pages/products.html?category=vetamin">Vitamins</a
+            ><a href="../pages/products.html?category=martial-arts"
+              >Sports &amp; Martial Arts</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <h4>Quick Links</h4>
+          <div class="links">
+            <a href="../index.html">Home</a
+            ><a href="../pages/products.html">All Products</a
+            ><a href="../pages/offers.html">Current Offers</a
+            ><a href="../pages/advice.html">Sports Advice</a
+            ><a href="../pages/protein-calculator.html">Protein Calculator</a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Customer Service</h4>
+          <div class="links">
+            <a href="../pages/checkout.html">Checkout &amp; Orders</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Shipping &amp; Delivery Questions</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Returns &amp; Product Support</a
+            ><a href="../pages/login.html">Account Access</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Contact Us: +963 959 122 991</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_footer">
+        <div class="container">
+          <p>© <span>FADLI SPORT.</span> All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script defer="" src="../js/items_home.js"></script>
+    <script defer="" src="../js/main.js"></script>
+    <button
+      aria-label="Close navigation menu"
+      class="mobile-nav-backdrop"
+      tabindex="-1"
+      type="button"
+    ></button>
+  </body>
+</html>

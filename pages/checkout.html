@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fadli Sport | Sports Nutrition &amp; Supplements</title>
+<!-- Logo -->
+<link href="../img/newlogo.png" rel="icon"/>
+<!-- Font Awsome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet"/>
+<!-- Link CSS -->
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="top_bar">
+<div class="container">
+</div>
+</div>
+<div class="top_header">
+<div class="container">
+<a class="logo" href="index.html"><img alt="Fadli Sport logo" src="../img/icon.png"/></a>
+<form action="" class="search_box">
+<div class="select-box">
+<select id="catagory" name="catagory">
+<option value="all">All Categories</option>
+<option value="supplements">Supplements</option>
+<option value="martial-arts">Martial Arts</option>
+</select>
+</div>
+<input id="search" name="search" placeholder="    Search For Products" required="" type="text"/>
+<button type="submit">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</form>
+<div class="header-icons">
+<div class="icon">
+<a href="#">
+<i class="fa-regular fa-heart"></i>
+<span class="count count-favourit">0</span>
+</a>
+</div>
+<a aria-expanded="false" aria-label="Open shopping cart" class="icon cart-trigger" href="#"><i class="fa-solid fa-cart-shopping"></i>
+<span class="count count-shop">0</span></a>
+</div>
+</div>
+</div>
+<div class="bottom_header">
+<div class="container">
+<nav class="nav">
+
+<button aria-controls="mobile-navigation" aria-expanded="false" aria-label="Open navigation menu" class="open_menu" type="button"><i class="fa-solid fa-bars"></i></button>
+<div class="category_nav">
+<div class="category_btn" onclick="Open_List(category_nav_list)">
+<i class="fa-solid fa-bars"></i>
+<p>Shop by Product</p>
+<i class="fa-solid fa-angle-down"></i>
+</div>
+<div class="category_nav_list">
+<a class="protein" href="#" onclick="Open_List(protein_list)">Protein
+                  <i class="fa-solid fa-angle-right"></i>
+</a>
+<div class="protein_list">
+<a href="#">Iso Protein</a>
+<a href="#">Whey Protein</a>
+<a href="#">Mass Gainer</a>
+</div>
+<a href="#">Creatine</a>
+<a href="#">Amino</a>
+<a href="#">Energy</a>
+</div>
+</div>
+<ul class="nav_links" id="mobile-navigation"><button aria-label="Close navigation menu" class="close_menu" title="Close menu" type="button"><i aria-hidden="true" class="fa-solid fa-xmark"></i></button>
+<li><a href="../index.html">Home</a></li><li><a href="products.html">Products</a></li>
+<li><a href="#">Offers</a></li>
+<li><a href="#">Advice</a></li>
+<li><a href="#">Protein Calculator</a></li>
+</ul>
+</nav>
+<div class="login_signup btns">
+<a class="btn" href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+<a class="btn" href="#">Sign Up<i class="fa-solid fa-user-plus"></i></a>
+</div>
+</div>
+</div>
+</header>
+<section class="checkout">
+<form action="https://script.google.com/macros/s/AKfycbyy6aJ9F52vLKt6xklUZLJIW7rn-0k_AwBP43ubtiel3FIjfhzZM1njOAUlPy79JzG6/exec" id="form_contact" method="post">
+<input id="items" name="items" type="hidden"/>
+<input id="total_Price" name="Total Price" type="hidden"/>
+<input id="count_Itmes" name="Count" type="hidden"/>
+<div class="container">
+<div class="ordersummary">
+<h1>Order Summary</h1>
+<div class="items" id="checkout_items"></div>
+<div class="bottom_summary">
+<div class="shop_table">
+<p>Subtotal :</p>
+<span class="subtotal_checkout">$325.00</span>
+</div>
+<div class="shop_table">
+<p>Shipping :</p>
+<span class="">$20.00</span>
+</div>
+<div class="shop_table">
+<p>total :</p>
+<span class="total_checkout">$325.00</span>
+</div>
+<div class="button_div">
+<button type="submit">Place order</button>
+</div>
+</div>
+</div>
+<div class="input_info">
+<div class="address">
+<h2>Delivery Address</h2>
+<div class="inputs">
+<label for="">Email</label>
+<input name="Email" placeholder="Enter your email" required="" type="email"/>
+<label for="">Name</label>
+<input name="Name" placeholder="Enter your name" required="" type="text"/>
+<label for="">Address</label>
+<input name="Address" placeholder="Enter your address" required="" type="text"/>
+<label for="">Phone</label>
+<input name="Phone" placeholder="Enter your Phone" required="" type="number"/>
+</div>
+</div>
+<div class="coupon">
+<h2>Coupon Code</h2>
+<div class="inputs">
+<label for="">Coupon code</label>
+<input placeholder="Enter your coupon code" type="text"/>
+<div class="btn_coupon">
+<button>Apply Coupon</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</section>
+<!-- footer -->
+<footer><div class="container"><div class="big_row"><img alt="Fadli Sport" class="logo_footer" src="../img/footer.png"/><p>Sports nutrition and training essentials to support your next step. Shop confidently, train consistently.</p><div class="icons_footer"><a aria-label="Contact Fadli Sport on WhatsApp" href="https://wa.me/963959122991" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a><a aria-label="Fadli Sport on Facebook" href="https://www.facebook.com/share/1Drqq5js1W/" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a aria-label="Fadli Sport on Instagram" href="https://www.instagram.com/fadli.tkd?obrf=MzE5M210N204a2Fk" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a></div></div><div class="row"><h4>Find It Fast</h4><div class="links"><a href="../pages/products.html?category=protein">Protein &amp; Whey</a><a href="../pages/products.html?category=creatine">Creatine</a><a href="../pages/products.html?category=amino">Amino Acids</a><a href="../pages/products.html?category=vetamin">Vitamins</a><a href="../pages/products.html?category=martial-arts">Sports &amp; Martial Arts</a></div></div><div class="row"><h4>Quick Links</h4><div class="links"><a href="../index.html">Home</a><a href="../pages/products.html">All Products</a><a href="../pages/offers.html">Current Offers</a><a href="../pages/advice.html">Sports Advice</a><a href="../pages/protein-calculator.html">Protein Calculator</a></div></div><div class="row"><h4>Customer Service</h4><div class="links"><a href="../pages/checkout.html">Checkout &amp; Orders</a><a href="https://wa.me/963959122991" rel="noopener" target="_blank">Shipping &amp; Delivery Questions</a><a href="https://wa.me/963959122991" rel="noopener" target="_blank">Returns &amp; Product Support</a><a href="../pages/login.html">Account Access</a><a href="https://wa.me/963959122991" rel="noopener" target="_blank">Contact Us: +963 959 122 991</a></div></div></div><div class="bottom_footer"><div class="container"><p>© <span>FADLI SPORT.</span> All Rights Reserved</p></div></div></footer>
+<div class="cart">
+<div class="top_cart">
+<h3>Cart Items : <span class="count_itme_cart">0</span></h3>
+<span class="close_cart" onclick="Open_List(cart)"><i class="fa-regular fa-circle-xmark"></i></span>
+</div>
+<div class="items_in_cart" id="cart_items"></div>
+<div class="bottom_cart">
+<div class="total">
+<p>subtotal</p>
+<p class="price_cart_total">%0</p>
+</div>
+<div class="button_cart">
+<a class="btn_cart btn btn_checkout active" href="#">Checkout</a>
+<span class="btn_cart trans_bg btn_shop btn" onclick="Open_List(cart)">Shop</span>
+</div>
+</div>
+</div>
+<!-- File JS -->
+<script src="../js/main.js"></script>
+<script src="../js/submit_checkout.js"></script>
+<button aria-label="Close navigation menu" class="mobile-nav-backdrop" tabindex="-1" type="button"></button>
+</body>
+</html>

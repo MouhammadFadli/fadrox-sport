@@ -1,0 +1,363 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Offers | Fadli Sport</title>
+    <link href="../img/newlogo.png" rel="icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <div class="container topbar-inner">
+          <div class="sports-tip">
+            <i aria-hidden="true" class="fa-solid fa-lightbulb"></i
+            ><span class="sports-tip-label">Sports tip:</span
+            ><span class="sports-tip-text"
+              >Recover well and train consistently.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="top_header">
+        <div class="container">
+          <a class="logo" href="../index.html"
+            ><img alt="Fadli Sport logo" src="../img/icon.png"
+          /></a>
+          <div class="header-icons">
+            <a aria-label="Favorites" class="icon" href="favorites.html"
+              ><i class="fa-regular fa-heart"></i
+              ><span class="count count-favourit">0</span></a
+            ><a
+              aria-expanded="false"
+              aria-label="Shopping cart"
+              class="icon cart-trigger"
+              href="#cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span class="count count-shop">0</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <button
+              aria-controls="mobile-navigation"
+              aria-expanded="false"
+              aria-label="Open navigation menu"
+              class="open_menu"
+              type="button"
+            >
+              <i aria-hidden="true" class="fa-solid fa-bars"></i>
+            </button>
+            <div class="category_nav">
+              <button
+                aria-controls="category_nav_list"
+                aria-expanded="false"
+                class="category_btn"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-bars"></i>
+                <p>Shop by Product</p>
+                <i aria-hidden="true" class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="category_nav_list" id="category_nav_list">
+                <button data-offer-filter="all" type="button">All Offers</button
+                ><button data-offer-filter="protein" type="button">
+                  Protein</button
+                ><button data-offer-filter="creatine" type="button">
+                  Creatine</button
+                ><button data-offer-filter="vetamin" type="button">
+                  Vitamins &amp; Supplements</button
+                ><button data-offer-filter="amino" type="button">
+                  Amino Acids
+                </button>
+              </div>
+            </div>
+            <ul class="nav_links" id="mobile-navigation">
+              <button
+                aria-label="Close navigation menu"
+                class="close_menu"
+                title="Close menu"
+                type="button"
+              >
+                <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+              </button>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li>
+                <a class="active" aria-current="page" href="offers.html"
+                  >Offers</a
+                >
+              </li>
+              <li><a href="advice.html">Advice</a></li>
+              <li><a href="protein-calculator.html">Protein Calculator</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="content-page">
+      <div class="container">
+        <section class="page-heading">
+          <h1>
+            <i
+              class="fa-solid fa-tags"
+              style="color: var(--main-color-ora)"
+            ></i>
+            Current Offers
+          </h1>
+          <p>
+            Explore products currently marked as discounted in our catalogue.
+            Prices and availability should be confirmed before ordering.
+          </p>
+        </section>
+        <div
+          aria-label="Filter offers by category"
+          class="offers-filters"
+          role="group"
+        >
+          <button class="active" data-offer-filter="all" type="button">
+            All offers</button
+          ><button data-offer-filter="protein" type="button">Protein</button
+          ><button data-offer-filter="creatine" type="button">Creatine</button
+          ><button data-offer-filter="vetamin" type="button">Vitamins</button
+          ><button data-offer-filter="amino" type="button">Amino acids</button>
+        </div>
+        <section aria-live="polite" class="content-grid" id="offers-grid">
+          <p>Loading current offers…</p>
+        </section>
+        <p style="margin-top: 18px; color: #666; line-height: 1.7">
+          Offers may change. Please confirm the final price, stock, and delivery
+          details with Fadli Sport before completing an order.
+        </p>
+        <script>
+          (async () => {
+            const grid = document.getElementById("offers-grid");
+            let allOffers = [];
+            let active = "all";
+            const money = (n) => "$" + Number(n || 0).toLocaleString("en-US");
+            const root = "../";
+            function render() {
+              const list = allOffers.filter(
+                (p) =>
+                  active === "all" ||
+                  String(p.category || "").toLowerCase() === active,
+              );
+              grid.replaceChildren();
+              if (!list.length) {
+                grid.textContent =
+                  active === "all"
+                    ? "There are no discounted products listed right now."
+                    : "No discounted products are currently listed in this category.";
+                return;
+              }
+              list.forEach((p) => {
+                const card = document.createElement("article");
+                card.className = "content-card offer-product";
+                card.dataset.category = String(p.category || "");
+                const link = document.createElement("a");
+                link.href = "product.html?id=" + encodeURIComponent(p.id);
+                link.className = "offer-detail-link";
+                const img = document.createElement("img");
+                img.src = root + String(p.img || "").replace(/^\//, "");
+                img.alt = p.name || "Product";
+                img.loading = "lazy";
+                img.decoding = "async";
+                link.append(img);
+                const title = document.createElement("h3");
+                const titleLink = document.createElement("a");
+                titleLink.href = link.href;
+                titleLink.textContent = p.name || "Product";
+                title.append(titleLink);
+                const price = document.createElement("p");
+                price.className = "offer-price";
+                price.textContent = money(p.price);
+                const old = document.createElement("del");
+                old.textContent = money(p.old_price);
+                const stock = document.createElement("p");
+                stock.className = "stock-status";
+                stock.textContent = Number.isInteger(p.stock)
+                  ? p.stock > 0
+                    ? "In stock: " + p.stock
+                    : "Out of stock"
+                  : "Availability unconfirmed";
+                const actions = document.createElement("div");
+                actions.className = "offer-actions";
+                const add = document.createElement("button");
+                add.type = "button";
+                add.className = "btn btn_add_cart";
+                add.dataset.id = String(p.id);
+                add.disabled = !(Number.isInteger(p.stock) && p.stock > 0);
+                add.innerHTML =
+                  '<i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> ' +
+                  (add.disabled ? "Check availability" : "Add to cart");
+                const fav = document.createElement("button");
+                fav.type = "button";
+                fav.className = "favorite-toggle";
+                fav.dataset.id = String(p.id);
+                fav.setAttribute(
+                  "aria-label",
+                  "Add " + (p.name || "product") + " to favorites",
+                );
+                fav.setAttribute("aria-pressed", "false");
+                fav.innerHTML =
+                  '<i class="fa-regular fa-heart" aria-hidden="true"></i>';
+                actions.append(add, fav);
+                card.append(link, title, price, old, stock, actions);
+                grid.append(card);
+              });
+              document.dispatchEvent(new CustomEvent("offers:rendered"));
+            }
+            document.querySelectorAll("[data-offer-filter]").forEach((btn) =>
+              btn.addEventListener("click", () => {
+                active = btn.dataset.offerFilter || "all";
+                document
+                  .querySelectorAll(".offers-filters [data-offer-filter]")
+                  .forEach((b) =>
+                    b.classList.toggle(
+                      "active",
+                      b.dataset.offerFilter === active,
+                    ),
+                  );
+                document
+                  .querySelector(".category_nav_list")
+                  ?.classList.remove("active");
+                document
+                  .querySelector(".category_btn")
+                  ?.setAttribute("aria-expanded", "false");
+                render();
+                document
+                  .querySelector(".page-heading")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }),
+            );
+            try {
+              const response = await fetch("../js/products.json");
+              if (!response.ok) throw new Error("Could not load products");
+              const products = await response.json();
+              allOffers = products.filter(
+                (p) => Number(p.old_price) > Number(p.price),
+              );
+              render();
+            } catch (error) {
+              grid.textContent =
+                "Offers could not be loaded. Please return to the homepage and try again.";
+              console.error(error);
+            }
+          })();
+        </script>
+        <div class="cart">
+          <div class="top_cart">
+            <h3>Cart Items : <span class="count_itme_cart">0</span></h3>
+            <button aria-label="Close cart" class="close_cart" type="button">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+          </div>
+          <div class="items_in_cart" id="cart_items"></div>
+          <div class="bottom_cart">
+            <div class="total">
+              <p>Subtotal</p>
+              <p class="price_cart_total">$ 0</p>
+            </div>
+            <div class="button_cart">
+              <a class="btn_cart btn" href="checkout.html">Checkout</a
+              ><button class="btn_cart trans_bg btn cart-close" type="button">
+                Continue shopping
+              </button>
+            </div>
+          </div>
+        </div>
+        <script src="../js/items_home.js"></script>
+        <script src="../js/main.js"></script>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="big_row">
+          <img alt="Fadli Sport" class="logo_footer" src="../img/footer.png" />
+          <p>
+            Sports nutrition and training essentials to support your next step.
+            Shop confidently, train consistently.
+          </p>
+          <div class="icons_footer">
+            <a
+              aria-label="Contact Fadli Sport on WhatsApp"
+              href="https://wa.me/963959122991"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i></a
+            ><a
+              aria-label="Fadli Sport on Facebook"
+              href="https://www.facebook.com/share/1Drqq5js1W/"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i></a
+            ><a
+              aria-label="Fadli Sport on Instagram"
+              href="https://www.instagram.com/fadli.tkd?obrf=MzE5M210N204a2Fk"
+              rel="noopener"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Find It Fast</h4>
+          <div class="links">
+            <a href="../pages/products.html?category=protein"
+              >Protein &amp; Whey</a
+            ><a href="../pages/products.html?category=creatine">Creatine</a
+            ><a href="../pages/products.html?category=amino">Amino Acids</a
+            ><a href="../pages/products.html?category=vetamin">Vitamins</a
+            ><a href="../pages/products.html?category=martial-arts"
+              >Sports &amp; Martial Arts</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <h4>Quick Links</h4>
+          <div class="links">
+            <a href="../index.html">Home</a
+            ><a href="../pages/products.html">All Products</a
+            ><a href="../pages/offers.html">Current Offers</a
+            ><a href="../pages/advice.html">Sports Advice</a
+            ><a href="../pages/protein-calculator.html">Protein Calculator</a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Customer Service</h4>
+          <div class="links">
+            <a href="../pages/checkout.html">Checkout &amp; Orders</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Shipping &amp; Delivery Questions</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Returns &amp; Product Support</a
+            ><a href="../pages/login.html">Account Access</a
+            ><a href="https://wa.me/963959122991" rel="noopener" target="_blank"
+              >Contact Us: +963 959 122 991</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bottom_footer">
+        <div class="container">
+          <p>© <span>FADLI SPORT.</span> All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <button
+      aria-label="Close navigation menu"
+      class="mobile-nav-backdrop"
+      tabindex="-1"
+      type="button"
+    ></button>
+  </body>
+</html>
