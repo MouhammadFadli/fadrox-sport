@@ -3397,13 +3397,34 @@ footer .row .links a {
 
   /* Reduce top information bar */
   header .top_bar {
-    height: auto;
-    min-height: 30px;
+    height: auto !important;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .top_bar .container {
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   header .top_bar .container .top_bar_list {
-    min-height: 30px;
-    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  header .top_bar .container .top_bar_list > * {
+    max-width: 100%;
   }
 
   /* Logo, icons and header spacing */
@@ -3421,13 +3442,48 @@ footer .row .links a {
     object-fit: contain;
   }
 
+  /* Favorite and cart icons */
   header .top_header .header-icons {
-    gap: 16px;
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 4px 8px;
+  }
+
+  header .top_header .header-icons .icon {
+    position: relative;
+    width: 38px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 38px;
   }
 
   header .top_header .header-icons .icon i {
     font-size: 21px;
+    line-height: 1;
+  }
+
+  /* Small circular counters */
+  header .top_header .header-icons .icon .count {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 19px;
+    height: 19px;
+    min-width: 19px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    box-sizing: border-box;
+    z-index: 2;
   }
 
   /* Search bar */
@@ -3573,12 +3629,99 @@ footer .row .links a {
   .product .icons a:hover {
     transform: none;
   }
+
+  /* 3. Offer cards: consistent layout */
+  .offers_bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .offers_bottom .container .box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 12px;
+    min-height: 205px;
+  }
+
+  .offers_bottom .container .box img {
+    width: 42%;
+    max-width: 145px;
+    min-width: 0;
+    height: 150px;
+    object-fit: contain;
+    flex: 0 1 42%;
+  }
+
+  .offers_bottom .container .box .text {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .offers_bottom .container .box h5 {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+
+  /* Discount stays in one consistent row */
+  .offers_bottom .container .box .sale {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 4px 0;
+  }
+
+  .offers_bottom .container .box .sale p {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 14px;
+  }
+
+  .offers_bottom .container .box .sale span {
+    font-size: clamp(27px, 7vw, 36px);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  /* Shop Now: same alignment in every offer card */
+  .offers_bottom .container .box h6 {
+    width: 112px;
+    max-width: 100%;
+    min-height: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    box-sizing: border-box;
+  }
 }
 
 /* Narrow phones */
 @media (max-width: 380px) {
   header .top_header .header-icons {
-    gap: 10px;
+    gap: 14px;
   }
 
   header .top_header .search_box select {
@@ -3586,6 +3729,14 @@ footer .row .links a {
     font-size: 11px;
   }
 
+  header .top_header .header-icons .icon {
+    width: 34px;
+    flex-basis: 34px;
+  }
+
+  header .top_header .header-icons .icon i {
+    font-size: 23px;
+  }
   .product .icons {
     left: 5px;
     right: 5px;
@@ -3597,5 +3748,36 @@ footer .row .links a {
     padding: 0 3px;
     font-size: 11px;
     gap: 3px;
+  }
+  .offers_bottom .container .box {
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  .offers_bottom .container .box img {
+    width: 38%;
+    flex-basis: 38%;
+    height: 135px;
+  }
+
+  .offers_bottom .container .box .text {
+    min-height: 165px;
+  }
+
+  .offers_bottom .container .box h5 {
+    font-size: 13px;
+  }
+
+  .offers_bottom .container .box .sale p {
+    font-size: 12px;
+  }
+
+  .offers_bottom .container .box .sale span {
+    font-size: 27px;
+  }
+
+  .offers_bottom .container .box h6 {
+    width: 104px;
+    font-size: 13px;
   }
 }
